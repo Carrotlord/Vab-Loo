@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VabLoo (Mockup)</title>
+<style>
+.grid {
+    border:1px solid silver;
+}
+.gridbox {
+    border:1px solid silver;
+    height:128px;
+    width:128px;
+}
+body {
+    font-family:Consolas,Courier New,monospace;
+    font-size:4em;
+}
+td {
+    text-align:center;
+}
+</style>
+</head>
+<table class="grid">
+<tr>
+<td class="gridbox">
+<span style="color:green;">A</span>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<span style="color:royalblue;">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+<span style="color:orange;">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&uarr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+<span style="color:green;">B</span>
+</td>
+<td class="gridbox">
+&mdash;
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<span style="color:blue;">clone</span>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<span style="color:green;">B</span>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+B<sup>2</sup>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+<span style="color:green;">C</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+<span style="color:green;">B</span>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+*
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<span style="color:green;">-B</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&uarr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+*
+</td>
+<td class="gridbox">
+&larr;
+</td>
+<td class="gridbox">
+<span style="color:royalblue;">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+-1
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+<span style="color:red;">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+*
+</td>
+<td class="gridbox">
+&larr;
+</td>
+<td class="gridbox">
+4
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+-
+</td>
+<td class="gridbox">
+&larr;
+</td>
+<td class="gridbox">
+<span style="color:orange;">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&radic;<span style="text-decoration:overline;">num</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+<span style="color:blue;">clone</span>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
++
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<sup>n</sup>/<sub>2</sub>
+</td>
+<td class="gridbox">
+&rarr;
+</td>
+<td class="gridbox">
+<span style="color:red;">x<sub>0</sub></span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&uarr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+-
+</td>
+<td class="gridbox">
+&larr;
+</td>
+<td class="gridbox">
+<span style="color:red">()</span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+<sup>n</sup>/<sub>2</sub>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+&darr;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+
+<tr>
+<td class="gridbox">
+<span style="color:red;">x<sub>1</sub></span>
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+<td class="gridbox">
+&nbsp;
+</td>
+</tr>
+</table>
+
+</html>
